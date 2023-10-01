@@ -38,8 +38,8 @@ def webServer(port=13331):
 
             # Send HTTP header line for a valid request
             header = "HTTP/1.1 200 OK\r\n"
-            outputdata += "Content-Type: text/html; charset=UTF-8\r\n"
-            header+= "Content-Length: " + str(len(outputdata)) + "\r\n"
+            outputdata = "Content-Type: text/html; charset=UTF-8\r\n"
+            header += "Content-Length: " + str(len(outputdata)) + "\r\n"
             header += "\r\n"
 
             # Send the header and the content of the requested file to the client
