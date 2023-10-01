@@ -49,7 +49,7 @@ def webServer(port=13331):
 
             # Fill in end
 
-            for i in range(0, len(outputdata)):
+            for i in f(len(outputdata)):
                 connectionSocket.send(outputdata[i].encode())
             #Fill in start - append your html file contents #Fill in end
 
